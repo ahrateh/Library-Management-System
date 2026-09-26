@@ -53,8 +53,13 @@ class Main{
             else if(choice == 12){
                 library.markLost(input);
             }
-
-        }while (choice != 0);
+            else if(choice == 0){
+                System.out.println("Good Bye !");
+            }
+            else{
+                System.out.println("Invalid choice ; Please enter between 1 and 12 OR 0 for Exit");
+            }
+        }while (choice <= 0 || choice > 12);
     }
     public static int readInt(Scanner input){
         while(true){
