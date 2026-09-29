@@ -59,7 +59,7 @@ class Main{
             else{
                 System.out.println("Invalid choice ; Please enter between 1 and 12 OR 0 for Exit");
             }
-        }while (choice <= 0 || choice > 12);
+        }while (choice != 0);
     }
     public static int readInt(Scanner input){
         while(true){
